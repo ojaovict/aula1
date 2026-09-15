@@ -1,48 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aula 1</title>
-</head>
-<body style="background-image: url('Visual_Studio_Code_1.35_icon.svg.webp');">
-    <h1 style="
-        color: red; 
-        background-color: cyan; 
-        font-size: 100px;
-    "><b>Gerardo Castro</b></h1>
-    <p><b>Desenvolvedor <i>Fullstack</i></b></p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Digital College</h1>
+    <h1 class="nome"><b>João Victor</b></h1>
+    <p>><b>Estudante de programação</b></p>
 
     <figure>
-        <img height="80" src="Visual_Studio_Code_1.35_icon.svg.webp" alt="Logo do Visual Studio Code">
-        <figcaption>logo do visual studio code</figcaption>
+        <img height="80" src="data:image/jpeg;base64,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" alt="lain"> 
     </figure>
-    
-    <p>
-        Tecnologias que eu sei:
-        
-        <div style="
-        background-color: rgba(255, 0, 0, 0.82); 
-        width: 200px;
-        border: 2px solid brown;
-        border-radius: 10px;
-        ">
-            <ul>
-                <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">HTML</a></li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <ol>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                    <li>item 4</li>
-                </ol>
-            </ul>
-        </div>
-        
-    </p>
-    
-</body>
+
+
+    <p>tecnologias que eu sei:</p>
+    <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>mySQL</li>
+            <ol>
+                <li></li>
+
+            </ol>
+        </ul>
+    </div>
+  </body>
 </html>
